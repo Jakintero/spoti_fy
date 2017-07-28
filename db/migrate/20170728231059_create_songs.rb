@@ -4,7 +4,7 @@ class CreateSongs < ActiveRecord::Migration[5.1]
       t.string :name
       t.integer :number
       t.string :preview_url
-      add_foreign_key :albums
+      belongs_to :album, index: true
 
       t.timestamps
     end
