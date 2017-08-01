@@ -1,0 +1,19 @@
+<h1>Spotify#index</h1>
+
+
+<h1>Artistas</h1>
+
+<table>
+  <thead>
+    <th>   </th>
+    <th>Nombre</th>
+  </thead>
+  <tbody>
+    <% @artists.each do |artist| %>
+      <tr>
+        <td><%= artist.id %></td>
+        <td><%= link_to artist.name, artists_path(artist) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

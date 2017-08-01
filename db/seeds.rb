@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+artist = Artist.create(name: 'Metallica')
+
+10.times do |i|
+  artist.albums.create(name: '...And Justice For All')
+
+end
