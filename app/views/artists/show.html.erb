@@ -1,11 +1,20 @@
-<h1>Albumes de <%= @artist.name %></h1>
+<h1 class="text-center">Albumes de <%= @artist.name %></h1><br><br>
 
 
 
-<table border="1px">
+<!-- <table border="1px">
 <% @artist.albums.each do |album| %>
   <tr>Name: <%= album.name %></tr><br>
   <tr>Released:  <%= album.released_at %></tr><br>
   <tr><img src="<%= album.image_url %>"></tr><br><br>
 <% end %>
-</table>
+</table> -->
+
+<div class="row">
+  <% @artist.albums.each do |album|  %>
+  <div class="artist col-md-4">
+    <p class="a_name"><%= album.name %></p>
+    <img src="<%= album.image_url %>" class="img-thumbnail" >
+  </div>
+  <% end %>
+</div><br><br><br>

@@ -1,15 +1,18 @@
-<h1>"Spotify"</h1>
+<html>
+  <body>
+    <h1 class="text-center">"Spotify"</h1>
 
 
-<h1>Artistas</h1>
+    <h1>Artistas</h1>
 
 
-<table>
-  <% @artists.each do |artist| %>
-      <td>
-        <tr><%= link_to artist.name, artist_path(artist) %></tr><br>
-        <tr><img src="<%= artist.image_url %>"></tr><br><br>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <div class="row">
+        <% @artists.each do |artist|  %>
+        <div class="artist col-md-4">
+          <p class="a_name"><%= link_to artist.name, artist_path(artist)%></p>
+          <%= link_to(image_tag(artist.image_url, class: "img-circle"), artist_path(artist)) %>
+        </div>
+        <% end %>
+      </div><br><br><br>
+    </body>
+</html>

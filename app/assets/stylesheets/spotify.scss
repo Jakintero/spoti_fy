@@ -1,3 +1,31 @@
 // Place all the styles related to the Spotify controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+// .t-index {
+//   margin-left: 500px;
+//
+//
+// }
+
+html body{
+  background-image: url("http://www.djspotify.nl/images/background_01.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.text-center{
+  color: white;
+  font-size: 45px;
+}
+h1 {
+  color: white;
+  text-shadow: 2px 2px #ff0000;
+}
+.a_name{
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 20px;
+}
+.row{
+  margin-left: 80px;
+}
